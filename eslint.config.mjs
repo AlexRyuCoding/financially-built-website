@@ -30,6 +30,7 @@ const eslintConfig = [
           varsIgnorePattern: "^_",
         },
       ],
+      "@next/next/no-page-custom-font": "off",
     },
   },
 ];
