@@ -1,0 +1,66 @@
+{
+  "site": {
+    "name": "Financially Built",
+    "url": "https://www.financiallybuilt.com",
+    "language": "en-US",
+    "theme_color": "#0A3768",
+    "background_color": "#FFFFFF"
+  },
+  "meta": {
+    "title": "College Fund Planning for Families | Financially Built",
+    "description": "Build your child’s college fund with confidence. Financially Built helps families create smart, stress-free savings plans and navigate FAFSA with expert guidance.",
+    "keywords": [
+      "college fund planning",
+      "college savings plan",
+      "FAFSA help",
+      "education funding",
+      "529 plans",
+      "financial planning for families",
+      "saving for college",
+      "financial advisor for parents",
+      "family financial planning"
+    ],
+    "author": "Financially Built",
+    "robots": "index, follow"
+  },
+  "openGraph": {
+    "type": "website",
+    "title": "Set Your Child Up for Success | College Fund Planning Made Simple",
+    "description": "Plan early, stress less. Financially Built helps you secure your child’s education future with personalized college funding guidance.",
+    "url": "https://www.financiallybuilt.com",
+    "site_name": "Financially Built",
+    "images": [
+      {
+        "url": "https://www.financiallybuilt.com/og-image.jpg",
+        "width": 1200,
+        "height": 630,
+        "alt": "Happy family planning their child’s college future"
+      }
+    ]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Financially Built | Smart College Fund Planning",
+    "description": "Helping young families build confident, stress-free college savings plans and navigate FAFSA with ease.",
+    "image": "https://www.financiallybuilt.com/og-image.jpg",
+    "creator": "@financiallybuilt"
+  },
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Financially Built",
+    "url": "https://www.financiallybuilt.com",
+    "logo": "https://www.financiallybuilt.com/logo.png",
+    "description": "Financially Built helps parents plan, save, and secure their children’s college future with transparent, personalized financial guidance.",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "serviceType": "College Fund Planning, FAFSA Guidance, Family Financial Education",
+    "sameAs": [
+      "https://facebook.com/financiallybuilt",
+      "https://instagram.com/financiallybuilt",
+      "https://linkedin.com/company/financiallybuilt"
+    ]
+  }
+}
