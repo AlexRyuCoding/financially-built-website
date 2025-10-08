@@ -20,7 +20,7 @@ export function Footer() {
           {/* Brand and Tagline */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-primary">
-              Financially Built
+              Financially Built.
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Helping families build brighter futures — one plan at a time.

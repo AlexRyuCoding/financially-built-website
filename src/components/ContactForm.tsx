@@ -246,7 +246,8 @@ export function ContactForm({ type, onBack }: ContactFormProps) {
   const handleConsultSubmit = async (data: ConsultFormData) => {
     setIsSubmitting(true);
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Form submitted:", data);
+    // TODO: Connect to backend API
+    // console.log("Form submitted:", data);
     setIsSubmitted(true);
     setIsSubmitting(false);
   };
@@ -254,7 +255,8 @@ export function ContactForm({ type, onBack }: ContactFormProps) {
   const handleQuestionSubmit = async (data: QuestionFormData) => {
     setIsSubmitting(true);
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Form submitted:", data);
+    // TODO: Connect to backend API
+    // console.log("Form submitted:", data);
     setIsSubmitted(true);
     setIsSubmitting(false);
   };

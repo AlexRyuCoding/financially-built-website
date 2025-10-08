@@ -42,7 +42,7 @@ export function Hero() {
         className="relative z-10 text-center max-w-4xl mx-auto px-4"
       >
         <Card className="backdrop-blur-sm bg-background/40 border-0 shadow-2xl">
-          <div className="p-6 md:p-10 lg:p-12 space-y-6 md:space  -y-8">
+          <div className="p-6 md:p-10 lg:p-12 space-y-6 md:space-y-8">
             <motion.h1
               variants={fadeUp}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight"

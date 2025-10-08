@@ -71,7 +71,7 @@ export function Header() {
             }}
             className="text-xl md:text-2xl font-bold text-primary hover:opacity-80 transition-opacity"
           >
-            Financially Built
+            Financially Built.
           </a>
 
           {/* Desktop Navigation */}
