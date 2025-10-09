@@ -36,7 +36,7 @@ export function generateSiteMetadata(): Metadata {
 }
 
 export function generateStructuredData() {
-  const { structuredData, site } = siteMetadata;
+  const { structuredData } = siteMetadata;
 
   return {
     "@context": structuredData["@context"],

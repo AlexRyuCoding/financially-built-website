@@ -243,20 +243,20 @@ export function ContactForm({ type, onBack }: ContactFormProps) {
 
   const isConsult = type === "consult";
 
-  const handleConsultSubmit = async (data: ConsultFormData) => {
+  const handleConsultSubmit = async (_data: ConsultFormData) => {
     setIsSubmitting(true);
     await new Promise((resolve) => setTimeout(resolve, 1500));
     // TODO: Connect to backend API
-    // console.log("Form submitted:", data);
+    // console.log("Form submitted:", _data);
     setIsSubmitted(true);
     setIsSubmitting(false);
   };
 
-  const handleQuestionSubmit = async (data: QuestionFormData) => {
+  const handleQuestionSubmit = async (_data: QuestionFormData) => {
     setIsSubmitting(true);
     await new Promise((resolve) => setTimeout(resolve, 1500));
     // TODO: Connect to backend API
-    // console.log("Form submitted:", data);
+    // console.log("Form submitted:", _data);
     setIsSubmitted(true);
     setIsSubmitting(false);
   };
