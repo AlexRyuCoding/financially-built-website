@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import siteMetadata from "../../public/site-meta.json";
+import siteMetadata from "@/data/site-meta.json";
 
 export function generateSiteMetadata(): Metadata {
   const { meta, openGraph, twitter, site } = siteMetadata;
