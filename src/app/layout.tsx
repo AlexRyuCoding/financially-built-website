@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { generateSiteMetadata, generateStructuredData } from "@/lib/seo";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { Analytics } from "@/components/Analytics";
 
 export const metadata: Metadata = generateSiteMetadata();
 
@@ -33,8 +35,11 @@ export default function RootLayout({
             __html: JSON.stringify(structuredData),
           }}
         />
+        <Analytics />
       </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <ErrorBoundary>{children}</ErrorBoundary>
+      </body>
     </html>
   );
 }

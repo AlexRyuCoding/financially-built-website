@@ -31,7 +31,7 @@
     "site_name": "Financially Built",
     "images": [
       {
-        "url": "https://www.financiallybuilt.com/og-image.jpg",
+        "url": "https://www.financiallybuilt.com/og-image.png",
         "width": 1200,
         "height": 630,
         "alt": "Happy family planning their child’s college future"
@@ -42,7 +42,7 @@
     "card": "summary_large_image",
     "title": "Financially Built | Smart College Fund Planning",
     "description": "Helping young families build confident, stress-free college savings plans and navigate FAFSA with ease.",
-    "image": "https://www.financiallybuilt.com/og-image.jpg",
+    "image": "https://www.financiallybuilt.com/og-image.png",
     "creator": "@financiallybuilt"
   },
   "structuredData": {
@@ -50,7 +50,7 @@
     "@type": "FinancialService",
     "name": "Financially Built",
     "url": "https://www.financiallybuilt.com",
-    "logo": "https://www.financiallybuilt.com/logo.png",
+    "logo": "https://www.financiallybuilt.com/fb-logo1.png",
     "description": "Financially Built helps parents plan, save, and secure their children’s college future with transparent, personalized financial guidance.",
     "areaServed": {
       "@type": "Country",

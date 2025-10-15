@@ -243,22 +243,50 @@ export function ContactForm({ type, onBack }: ContactFormProps) {
 
   const isConsult = type === "consult";
 
-  const handleConsultSubmit = async (_data: ConsultFormData) => {
+  const handleConsultSubmit = async (data: ConsultFormData) => {
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    // TODO: Connect to backend API
-    // console.log("Form submitted:", _data);
-    setIsSubmitted(true);
-    setIsSubmitting(false);
+    try {
+      // Submit to API route
+      const response = await fetch("/api/submit-form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "consult", ...data }),
+      });
+
+      if (!response.ok) throw new Error("Submission failed");
+
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert(
+        "There was an error submitting your form. Please try again or contact us directly."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  const handleQuestionSubmit = async (_data: QuestionFormData) => {
+  const handleQuestionSubmit = async (data: QuestionFormData) => {
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    // TODO: Connect to backend API
-    // console.log("Form submitted:", _data);
-    setIsSubmitted(true);
-    setIsSubmitting(false);
+    try {
+      // Submit to API route
+      const response = await fetch("/api/submit-form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "question", ...data }),
+      });
+
+      if (!response.ok) throw new Error("Submission failed");
+
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert(
+        "There was an error submitting your form. Please try again or contact us directly."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {

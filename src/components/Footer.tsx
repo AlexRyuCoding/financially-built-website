@@ -1,12 +1,10 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const quickLinks = [
-  { label: "About", href: "#" },
-  { label: "FAQs", href: "#" },
+  { label: "About", href: "#solution" },
   { label: "Privacy Policy", href: "#" },
   { label: "Disclosures", href: "#" },
   { label: "Resources", href: "#" },
@@ -48,34 +46,15 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Newsletter */}
-          <div className="space-y-4">
-            <h4 className="text-sm font-semibold text-foreground">
-              Parent Planning Newsletter
-            </h4>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Get practical tips, FAFSA updates, and simple strategies that help
-              you stay ahead.
-            </p>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                // Mock handler
-                alert("Thank you for subscribing!");
-              }}
-              className="flex flex-col sm:flex-row gap-2"
-            >
-              <Input
-                type="email"
-                placeholder="Your email"
-                required
-                className="flex-1"
-                aria-label="Email address"
-              />
-              <Button type="submit" size="sm">
-                Subscribe
-              </Button>
-            </form>
+          {/* Logo */}
+          <div className="flex justify-center sm:justify-start">
+            <Image
+              src="/fb-logo1.png"
+              alt="Financially Built Logo"
+              className="h-24 w-auto"
+              width={100}
+              height={100}
+            />
           </div>
         </div>
 
@@ -85,10 +64,6 @@ export function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>
             © {new Date().getFullYear()} Financially Built. All rights reserved.
-          </p>
-          <p className="text-xs">
-            Investment advisory services offered through a registered investment
-            advisor.
           </p>
         </div>
       </div>
